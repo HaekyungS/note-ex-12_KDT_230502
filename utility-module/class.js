@@ -60,6 +60,20 @@ class Calculator {
     return `덧셈의 결과는 ${this.add()}, 뺄셈의 결과는 ${this.minus()}, 나눗셈의 결과는 ${this.divide()}, 곱셈의 결과는 ${this.multiply()}`
   }
 
+  calculator(cal){
+    if(cal==='add'){
+      return this.add()
+    }else if(cal==='minus'){
+      return this.minus()
+    }else if(cal==='divide'){
+      return this.divide()
+    }else if(cal==='multiply'){
+      return this.multiply()
+    }else{
+      return console.log('사칙연산 기호가 아닙니다.')
+    }
+  }
+
 }
 
 module.exports = Calculator;
