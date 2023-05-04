@@ -34,7 +34,9 @@ class Calculator {
     return this._x * this._y
   }
 
-
+  get allCalaulator() {
+    return `덧셈의 결과는 ${this.add()}, 뺄셈의 결과는 ${this.minus()}, 나눗셈의 결과는 ${this.divide()}, 곱셈의 결과는 ${this.multiply()}`
+  }
 
 }
 
